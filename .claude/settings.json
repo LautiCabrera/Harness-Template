@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "additionalDirectories": [
+      "{{RUTA_REPO_HERMANO_1}}"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "Bash(git push)",
+      "Bash(git reset --hard *)",
+      "Bash(git branch -D *)",
+      "Bash(rm -rf *)",
+      "PowerShell(git push *)",
+      "PowerShell(git push)",
+      "PowerShell(git reset --hard *)",
+      "PowerShell(git branch -D *)",
+      "PowerShell(Remove-Item -Recurse *)"
+    ],
+    "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.*)"
+    ]
+  }
+}
